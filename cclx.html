@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>乘车路线</title>
+	<link rel="stylesheet" type="text/css" href="css/cclx.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <script type="text/javascript">
+            function MM_openBrWindow(theURL,winName,features) { //v2.0
+              window.open(theURL,winName,features);
+            }
+    </script>    
+</head>
+<body>
+    <div id="denglu" >      
+        <form action="#" method="post">
+            <p class="off"><a onclick="document.getElementById('denglu').style.display='none'">╳</a></p>
+            <p class="denglu-logo"><img src="images/logo.jpg"><span>用户名密码登录</span></p>     
+            <input type="text" name="username" placeholder="手机/邮箱/用户名" required="required">
+            <input type="password" name="pass" placeholder="密码" required="required" pattern="^[a-zA-Z]\w{5,17}$">
+            <p class="check"><input type="checkbox" id="check"><label for="check">下次自动登录</label><a href="注册.html">注册</a></p>
+            <input type="submit" value="登录" style="background: #0099ff;color: #fff;">
+            <p><span class="left">忘记密码？</span><span class="right">短信快捷登录</span></p>
+        </form>        
+    </div>
+<!-- header -->
+    <div class="header">
+        <div class="top">
+            <div class="top-box" id="top-box">                      
+                <a href="#" class="top-box-denglu" onclick="document.getElementById('denglu').style.display='block'">登录</a>
+                <a href="注册.html" class="on" target="_blank">注册</a>
+                <form action="#" class="search">
+                    <input type="text" placeholder="请输入搜索关键字" class="search-text">
+                    <input type="submit" class="search-submit" value="">
+                </form>             
+            </div>            
+        </div>		
+        <div class="logo">
+            <img src="images/logo.gif">
+            <p class="logo-a">欢乐亲子专业的亲子旅游、活动策划机构</p>
+            <p class="logo-b">咨询热线：<span>0574-25376832</span></p>           
+        </div>
+        <div style="clear:both;"></div>
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+                <li><a href="jdss.html">酒店搜索</a></li>
+				<li><a href="cjy.html">出境游</a></li>
+				<li><a href="gny.html">国内游</a></li>			
+				<li  class="sy"><a href="cclx.html">乘车路线</a></li>
+				<li><a href="lygl.html">旅游攻略</a></li>
+			</ul>
+		</div>
+	</div>
+<!-- banner -->
+	<div class="banner">
+		<img src="images/banner1.jpg">
+	</div>
+<!-- main -->
+    <div class="main">
+        <div class="jp">
+            <div class="jp-tit" ><img src="images/feiji.jpg"><p>机票查询</p></div>
+            <div class="jp-main" style="padding-right: 16px;border-right: 3px double #aaa">
+                <h3>国内机票查询</h3>
+                <form class="content" method="post" action="#">
+                    <p class="radio">
+                        <span>航程类型</span>
+                        <input type="radio" name="radio">单程
+                        <input type="radio" name="radio">往返
+                    </p>
+                    <p class="left">
+                        <span >出发城市</span>
+                        <input type="text" placeholder="城市名"  pattern="^[\u4e00-\u9fa5]{0,}$">
+                    </p>
+                    <p class="left"> 
+                        <span >到达城市</span>
+                        <input type="text" placeholder="城市名"  pattern="^[\u4e00-\u9fa5]{0,}$">
+                    </p>
+                    <p  class="left">
+                        <span>出发日期</span>
+                        <input type="date">
+                    </p>
+                    <p class="left">
+                        <span >返回日期</span>
+                        <input type="date">
+                    </p>
+                    <p class="num" >
+                        <span>乘客</span>
+                        <input type="number" value="1" min="1" max="9" >                
+                        <a>成人(12周岁以上)</a>                   
+                        <input type="number" min="0" max="2" value="0">
+                        <a >儿童票(2-12岁)</a>
+                        <a >婴儿票</a>
+                    </p>
+                    <p class="left">
+                        <span>舱位</span>
+                        <select >
+                            <option>经济舱</option>
+                            <option>超级经济舱</option>
+                            <option>公务舱</option>
+                            <option>头等舱</option>
+                        </select>
+                    </p>
+                    <p class="bottom"><input type="submit" value="搜索"></p>
+                </form>
+            </div>
+            <div class="jp-main" style="padding-left:16px">
+                <h3>国际机票查询</h3>
+                <form class="content" method="post" action="#">
+                    <p class="radio">
+                        <span>航程类型</span>
+                        <input type="radio" name="radio">单程
+                        <input type="radio" name="radio">往返
+                        <input type="radio" name="radio">多程(含缺口程)
+                    </p>
+                    <p class="left">
+                        <span >出发城市</span>
+                        <input type="text" placeholder="城市名"  pattern="^[u4e00-u9fa5],{0,}$">
+                    </p>
+                    <p class="left"> 
+                        <span >到达城市</span>
+                        <input type="text" placeholder="城市名"  pattern="^[u4e00-u9fa5],{0,}$">
+                    </p>
+                    <p  class="left">
+                        <span>出发日期</span>
+                        <input type="date">
+                    </p>
+                    <p class="left">
+                        <span >返回日期</span>
+                        <input type="date">
+                    </p>
+                   <p class="num" >
+                        <span>乘客</span>
+                        <input type="number" value="1" min="1" max="9" >                
+                        <a>成人(12周岁以上)</a>                   
+                        <input type="number" min="0" max="2" value="0">
+                        <a >儿童票(2-12岁)</a>
+                        <a >婴儿票</a>
+                    </p>
+                    <p class="left">
+                        <span>舱位</span>
+                        <select >
+                            <option>经济舱</option>
+                            <option>超级经济舱</option>
+                            <option>公务舱</option>
+                            <option>头等舱</option>
+                        </select>
+                    </p>
+                    <p class="bottom"><input type="submit" value="搜索" ></p>
+                </form>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+        <div class="ticket">
+             <div class="ticket-tit" ><img src="images/huoche.jpg"><p>火车票查询</p></div>
+             <div class="ticket-main">                 
+                 <img src="images/huoche2.jpg">
+                 <form>
+                    <h3>火车票预订</h3>
+                     <p class="left"><span>出发地</span><input type="text" pattern="^[\u4e00-\u9fa5]{0,}$" placeholder="衡阳"></p>
+                     <p class="left"><span>目的地</span><input type="text"  pattern="^[\u4e00-\u9fa5]{0,}$" placeholder="北京"></p>
+                     <p class="left"><span>时间</span><input type="date"></p>
+                     <p class="bottom"><span>只搜高铁/动车</span><input type="checkbox"></p>
+                     <p class="submit"><input type="submit" value="搜索"></p>
+                 </form>
+             </div>
+        </div>
+        <div class="ticket">
+            <div class="ticket-tit" ><img src="images/大巴.jpg"><p>汽车票查询</p></div>
+             <div class="ticket-main">
+                 <img src="images/daba.jpg">
+                 <form>                    
+                    <h3>汽车票预订</h3>
+                    <p class="left"><span>出发地</span><input type="text"  pattern="^[\u4e00-\u9fa5]{0,}$" placeholder="衡阳"></p>
+                    <p class="left"><span>目的地</span><input type="text"  pattern="^[\u4e00-\u9fa5]{0,}$" placeholder="北京">  </p>
+                    <p class="left"><span>时间</span><input type="date"></p>                     
+                    <p class="submit"><input type="submit" value="搜索"></p>
+                 </form>
+             </div>
+        </div>
+    </div>
+<!-- footer -->
+    <div class="footer">
+        <div>
+            <ul class="footer-item">            
+                <li class="footert-item-a">关于我们
+                    <ul>
+                        <li><a href="">网站简介</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">合作伙伴</a></li>
+                    </ul>
+                </li >        
+                <li class="footert-item-a">加入我们
+                    <ul>
+                        <li><a href="">招聘职位</a></li>
+                    </ul>
+                    
+                </li>
+                <li class="footert-item-a">网站条款
+                    <ul>
+                        <li><a href="">会员条款</a></li>
+                        <li><a href="">社区指南</a></li>
+                        <li><a href="">版权声明</a></li>
+                        <li><a href="">免责声明</a></li>
+                    </ul>
+                </li>
+                <li class="footert-item-a">帮助中心
+                    <ul>
+                        <li><a href="">新手上路</a></li>
+                        <li><a href="">使用帮助</a></li>
+                        <li><a href="">网站地图</a></li>
+                        <li><a href="">使用工具</a></li>
+                    </ul>
+                </li>
+                <div class="fb">
+                    <p>详细咨询请加入我们的公众号</p>
+                    <div>            
+                        <img src="images/weixin.jpg">
+                        <p>微信公众号</p>                
+                    </div>
+                    <div>
+                        <img src="images/qq.jpg">
+                        <p>QQ公众号</p> 
+                    </div>
+                </div>
+            </ul>            
+        </div>
+        <div style="clear: both;"></div>
+        <div class="copyright">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="jdss.html">酒店搜索</a></li>
+                <li><a href="cjy.html">出境游</a></li>
+                <li><a href="gny.html">国内游</a></li>                
+                <li><a href="cclx.html">乘车路线</a></li>
+                <li><a href="lygl.html">旅游攻略</a></li>
+            </ul>
+            <div style="clear: both;"></div>         
+           <p>COPYRIGHT©2018版权所有&nbsp;&nbsp;湖南财经工业职业技术学院</p>
+        </div>
+    </div>
+</body>
+</html>

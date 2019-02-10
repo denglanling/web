@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>酒店搜索</title>
+	<link rel="stylesheet" type="text/css" href="css/jdss.css">
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <script type="text/javascript">
+        function MM_openBrWindow(theURL,winName,features) { //v2.0
+          window.open(theURL,winName,features);
+        }
+    </script>
+</head>
+<body>
+    <div id="denglu" >      
+        <form action="#" method="post">
+            <p class="off"><a onclick="document.getElementById('denglu').style.display='none'">╳</a></p>
+            <p class="denglu-logo"><img src="images/logo.jpg"><span>用户名密码登录</span></p>     
+            <input type="text" name="username" placeholder="手机/邮箱/用户名" required="required">
+            <input type="password" name="pass" placeholder="密码" required="required" pattern="^[a-zA-Z]\w{5,17}$">
+           <p class="check"><input type="checkbox" id="check"><label for="check">下次自动登录</label><a href="注册.html">注册</a></p>
+            <input type="submit" value="登录" style="background: #0099ff;color: #fff;">
+            <p><span class="left">忘记密码？</span><span class="right">短信快捷登录</span></p>
+        </form>        
+    </div>
+<!-- header -->
+    <div class="header">
+        <div class="top">
+            <div class="top-box" id="top-box">                      
+                <a href="#" class="top-box-denglu" onclick="document.getElementById('denglu').style.display='block'">登录</a>
+                <a href="注册.html" class="on" target="_blank">注册</a>
+                <form action="#" class="search">
+                    <input type="text" placeholder="请输入搜索关键字" class="search-text">
+                    <input type="submit" class="search-submit" value="">
+                </form>             
+            </div>            
+        </div>     
+		<div class="logo">
+            <img src="images/logo.gif">
+            <p class="logo-a">欢乐亲子专业的亲子旅游、活动策划机构</p>
+            <p class="logo-b">咨询热线：<span>0574-25376832</span></p>           
+        </div>
+        <div style="clear:both;"></div>
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+                <li  class="sy"><a href="jdss.html">酒店搜索</a></li>
+				<li><a href="cjy.html">出境游</a></li>
+				<li><a href="gny.html">国内游</a></li>				
+				<li><a href="cclx.html">乘车路线</a></li>
+				<li><a href="lygl.html">旅游攻略</a></li>
+			</ul>
+		</div>
+	</div>
+<!-- banner -->
+	<div class="banner">
+		<img src="images/banner4.jpg">
+        <div class="banner-form">
+            <form>
+                <p class="form-tit"><a class="on">国内酒店</a><a >国际酒店</a></p>
+                <p><span>目的地</span><input type="text" placeholder="云南"  pattern="^[u4e00-u9fa5],{0,}$"></p>
+                <p class="time"><span>入住</span><input type="date" >
+                    <span>离开</span><input type="date" >
+                </p>
+                <p><span>关键词</span><input type="text" placeholder="请输入地标/商圈/景点名字"  pattern="^[u4e00-u9fa5],{0,}$"></p>
+                <p class="botton"><input type="submit" value="搜索"></p>
+            </form>            
+        </div>        
+	</div>
+    <div class="main">
+        <div class="main-tit">
+            <h2>热门酒店</h2>
+            <div>
+                <p >国内</p>
+                <a href="" style="background: #f67f00;color: #fff;">北京</a>
+                <a href="">上海</a>
+                <a href="">深圳</a>
+                <a href="">苏州</a>
+                <a href="">广州</a>
+                <a href="">杭州</a>
+                <a href="">成都</a>
+                <a href="">武汉</a>                
+            </div>               
+        </div>
+        <div style="clear:both;"></div>
+        <ul class="jdss-main">
+            <li><img src="images/jdss1.jpg">
+                <p><a href="">北京万达文华酒店</a></p>
+            </li>
+            <li style="margin: 0px 40px;"><img src="images/jdss2.jpg">
+                <p><a href=""> Zsmart智尚酒店(北京王府井中心店) </a></p>
+            </li>
+            <li><img src="images/jdss3.jpg">
+                <p><a href=""> 北京饭店</a></p>
+            </li>
+            <li><img src="images/jdss4.jpg">
+                <p><a href="">北京乾元酒店 </a></p>
+            </li>
+            <li style="margin: 0px 40px;"><img src="images/jdss5.jpg">
+                <p><a href="">北京四季御园国际大酒店 </a></p>
+            </li>
+            <li><img src="images/jdss6.jpg">
+                <p><a href="">北京国际饭店</a></p>
+            </li>
+            <div style="clear: both;"></div>
+        </ul>
+        <div class="main-tit">
+            <div>
+                <p>国际</p>
+                <a href="" style="background: #f67f00;color: #fff;">曼谷</a>
+                <a href="">新加坡</a>
+                <a href="">吉普岛</a>
+                <a href="">东京</a>
+                <a href="">挪威</a>
+                <a href="">何兰</a>
+                <a href="">埃及</a>
+                <a href="">巴西</a>   
+            </div>
+        </div>
+         <ul class="jdss-main">
+            <li><img src="images/jdss7.jpg">
+                <p><a href="">中间点曼达林大酒店 (Mandarin Hotel Managed by Centre Point)</a></p>
+            </li>
+            <li style="margin: 0px 40px;"><img src="images/jdss8.jpg">
+                <p><a href="">曼谷拉查丹利中心酒店 (Grande Centre Point Hotel Ratchadamri Bangkok)</a></p>
+            </li>
+            <li><img src="images/jdss9.jpg">
+                <p><a href="">曼谷亚洲酒店 (Asia Inn Bangkok)</a></p>
+            </li>
+            <li><img src="images/jdss10.jpg">
+                <p><a href="">曼谷城市酒店 (Bangkok City Hotel)</a></p>
+            </li>
+            <li style="margin: 0px 40px;"><img src="images/jdss11.jpg">
+                <p><a href="">曼谷常青坊酒店 (Evergreen Place Siam by UHG)</a></p>
+            </li>
+            <li><img src="images/jdss12.jpg">
+                <p><a href="">特鲁暹罗帕亚泰路酒店 (True Siam Phayathai Hotel)</a></p>
+            </li>
+            <div style="clear: both;"></div>
+        </ul>
+    </div>
+<!-- footer -->
+    <div class="footer">
+        <div>
+            <ul class="footer-item">            
+                <li class="footert-item-a">关于我们
+                    <ul>
+                        <li><a href="">网站简介</a></li>
+                        <li><a href="">联系我们</a></li>
+                        <li><a href="">合作伙伴</a></li>
+                    </ul>
+                </li >        
+                <li class="footert-item-a">加入我们
+                    <ul>
+                        <li><a href="">招聘职位</a></li>
+                    </ul>
+                    
+                </li>
+                <li class="footert-item-a">网站条款
+                    <ul>
+                        <li><a href="">会员条款</a></li>
+                        <li><a href="">社区指南</a></li>
+                        <li><a href="">版权声明</a></li>
+                        <li><a href="">免责声明</a></li>
+                    </ul>
+                </li>
+                <li class="footert-item-a">帮助中心
+                    <ul>
+                        <li><a href="">新手上路</a></li>
+                        <li><a href="">使用帮助</a></li>
+                        <li><a href="">网站地图</a></li>
+                        <li><a href="">使用工具</a></li>
+                    </ul>
+                </li>
+                <div class="fb">
+                    <p>详细咨询请加入我们的公众号</p>
+                    <div>            
+                        <img src="images/weixin.jpg">
+                        <p>微信公众号</p>                
+                    </div>
+                    <div>
+                        <img src="images/qq.jpg">
+                        <p>QQ公众号</p> 
+                    </div>
+                </div>
+            </ul>            
+        </div>
+        <div style="clear: both;"></div>
+        <div class="copyright">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="jdss.html">酒店搜索</a></li>
+                <li><a href="cjy.html">出境游</a></li>
+                <li><a href="gny.html">国内游</a></li>                
+                <li><a href="cclx.html">乘车路线</a></li>
+                <li><a href="lygl.html">旅游攻略</a></li>
+            </ul>
+            <div style="clear: both;"></div>         
+           <p>COPYRIGHT©2018版权所有&nbsp;&nbsp;湖南财经工业职业技术学院</p>
+        </div>
+    </div>
+</body>
+</html>
